@@ -16,7 +16,7 @@
             <div class="row my-5">
                 <div class="col">
                     <div class="col-md-8 col-md-offset-2">
-                        <asp:GridView ID="KullaniciGetirGrid" runat="server" CssClass="table"></asp:GridView>
+                        <asp:GridView ID="KullaniciGetirGrid" runat="server" CssClass="table border"></asp:GridView>
                     </div>
                 </div>
             </div>

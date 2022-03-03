@@ -11,13 +11,15 @@
 </head>
 <body>
     <form id="form1" runat="server">
+        <br />
+        <br />
         <div class="container">
             <div class="row my-2">
                 <div class="col">
                     <asp:Label Text="Kargo Firma Adı" runat="server" />
                 </div>
                 <div class="col">
-                    <asp:TextBox runat="server" ID="txtKargoAd" />
+                    <asp:TextBox runat="server" CssClass="input-group-text" ID="txtKargoAd" />
                 </div>
             </div>
 
@@ -26,7 +28,7 @@
                     <asp:Label Text="Kargo Firma Adres" runat="server" />
                 </div>
                 <div class="col">
-                    <asp:TextBox runat="server" ID="txtKargoAdres" />
+                    <asp:TextBox runat="server" CssClass="input-group-text" ID="txtKargoAdres" />
                 </div>
             </div>
 
@@ -34,7 +36,7 @@
                 <div class="col">
                 </div>
                 <div class="col">
-                    <asp:Button Text="KAYDET" runat="server" ID="btnKaydet" OnClick="btnKaydet_Click" />
+                    <asp:Button Text="KAYDET" runat="server" ID="btnKaydet" CssClass="btn btn-primary" OnClick="btnKaydet_Click" />
                 </div>
             </div>
 

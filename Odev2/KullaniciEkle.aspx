@@ -20,7 +20,7 @@
                     <asp:Label Text="Kullanıcı Adı" runat="server" />
                 </div>
                 <div class="col">
-                    <asp:TextBox runat="server" ID="txtKAd" />
+                    <asp:TextBox runat="server" CssClass="input-group-text" ID="txtKAd" />
                 </div>
             </div>
             <div class="row my-2">
@@ -28,7 +28,7 @@
                     <asp:Label Text="Kullanıcı Soyadı" runat="server" />
                 </div>
                 <div class="col">
-                    <asp:TextBox runat="server" ID="txtKSoyad" />
+                    <asp:TextBox runat="server" CssClass="input-group-text" ID="txtKSoyad" />
                 </div>
             </div>
             <div class="row my-2">
@@ -36,7 +36,7 @@
                     <asp:Label Text="Kullanıcı Yaş" runat="server" />
                 </div>
                 <div class="col">
-                    <asp:TextBox runat="server" ID="txtKYas" />
+                    <asp:TextBox runat="server" CssClass="input-group-text" ID="txtKYas" />
                 </div>
             </div>
              <div class="row my-2">
@@ -44,7 +44,7 @@
                     <asp:Label Text="Kullanıcı Adres" runat="server" />
                 </div>
                 <div class="col">
-                    <asp:TextBox runat="server" ID="txtKAdres" />
+                    <asp:TextBox runat="server" CssClass="input-group-text" ID="txtKAdres" />
                 </div>
             </div>
             <div class="row my-2">
@@ -52,7 +52,7 @@
                     
                 </div>
                 <div class="col">
-                    <asp:Button Text="KAYDET" runat="server" ID="btnKaydet" OnClick="btnKaydet_Click" />
+                    <asp:Button Text="KAYDET" runat="server" CssClass="btn btn-primary" ID="btnKaydet" OnClick="btnKaydet_Click" />
                 </div>
             </div>
             <div class="row my-2">

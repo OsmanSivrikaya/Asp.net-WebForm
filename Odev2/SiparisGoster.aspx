@@ -4,30 +4,44 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Sipariş Göster</title>
 </head>
 <body>
     <form id="form1" runat="server">
         <div>
-            <table>
-            <tr>
-                <td>SiparisID</td>
-                <td>KullaniciID</td>
-                <td>UrunID</td>
-                <td>KargoFirmaID</td>
-            </tr>
-            <asp:Repeater ID="rptSiparis" runat="server">
-                <ItemTemplate>
-                    <tr>
-                        <td><%#Eval("SiparisID") %></td>
-                        <td><%#Eval("KullaniciID") %></td>
-                        <td><%#Eval("UrunID") %></td>
-                        <td><%#Eval("KargoFirmaID") %></td>
-                    </tr>
-                </ItemTemplate>
-            </asp:Repeater>
-        </table>
+            <div class="container">
+                <div class="row my-3">
+                    <div class="col">
+                        <table class="table border">
+                            <tr>
+                                <td>Sipariş ID</td>
+                                <td>Kullanıcı Ad</td>
+                                <td>Kullanıcı Soyad</td>
+                                <td>Kullanıcı Adres</td>
+                                <td>Ürün Adı</td>
+                                <td>Kargo Firma Adı</td>
+                                <td>Kargo Firma Adres</td>
+                            </tr>
+                            <asp:Repeater ID="rptSiparis" runat="server">
+                                <ItemTemplate>
+                                    <tr>
+                                        <td><%#Eval("SiparisID") %></td>
+                                        <td><%#Eval("KAd") %></td>
+                                        <td><%#Eval("KSoyad") %></td>
+                                        <td><%#Eval("KAdres") %></td>
+                                        <td><%#Eval("UrunAd") %></td>
+                                        <td><%#Eval("KargoFirmaAd") %></td>
+                                        <td><%#Eval("Adres") %></td>
+                                    </tr>
+                                </ItemTemplate>
+                            </asp:Repeater>
+                        </table>
+                    </div>
+                </div>
+            </div>
         </div>
     </form>
 </body>

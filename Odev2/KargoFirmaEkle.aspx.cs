@@ -34,6 +34,7 @@ namespace Odev2
             KargoFirmaEkle1();
             txtKargoAd.Text = "";
             txtKargoAdres.Text = "";
+            KargoFirmaGetir();
         }
         public void KargoFirmaEkle1()
         {

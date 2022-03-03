@@ -24,6 +24,15 @@ namespace Odev2
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
+        /// txtUrunID denetimi.
+        /// </summary>
+        /// <remarks>
+        /// Otomatik üretilmiş alan.
+        /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtUrunID;
+
+        /// <summary>
         /// txtUrunAd denetimi.
         /// </summary>
         /// <remarks>

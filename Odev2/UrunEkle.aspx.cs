@@ -40,8 +40,8 @@ namespace Odev2
             con.con.Open();
             con.komut = new SqlCommand("spUrunEkle", con.con);
             con.komut.CommandType = CommandType.StoredProcedure;    
-            con.komut.Parameters.AddWithValue("@UrunID", txtUrunAd.Text);
-            con.komut.Parameters.AddWithValue("@KargoFirmaID", txtUrunAciklama.Text);
+            con.komut.Parameters.AddWithValue("@UrunAd", txtUrunAd.Text);
+            con.komut.Parameters.AddWithValue("@UrunAciklama", txtUrunAciklama.Text);
             con.komut.ExecuteNonQuery();
             con.con.Close();
         }
@@ -57,8 +57,9 @@ namespace Odev2
             con.con.Open();
             con.komut = new SqlCommand("spUrunGuncelle", con.con);
             con.komut.CommandType = CommandType.StoredProcedure;
-            con.komut.Parameters.AddWithValue("@UrunID", txtUrunAd.Text);
-            con.komut.Parameters.AddWithValue("@KargoFirmaID", txtUrunAciklama.Text);
+            con.komut.Parameters.AddWithValue("@UrunID", txtUrunID.Text);
+            con.komut.Parameters.AddWithValue("@UrunAd", txtUrunAd.Text);
+            con.komut.Parameters.AddWithValue("@UrunAciklama", txtUrunAciklama.Text);
             con.komut.ExecuteNonQuery();
             con.con.Close();
         }

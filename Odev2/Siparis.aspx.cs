@@ -25,7 +25,7 @@ namespace Odev2
         {
             string cs = "server=OSMANSIVRIKAYA;Database=c2cProje;Integrated Security=True";
             SqlConnection con = new SqlConnection(cs);
-            SqlCommand cmd = new SqlCommand("spSiparisGetir", con);
+            SqlCommand cmd = new SqlCommand("spTumTabloGetir", con);
             con.Open();
             rptSiparis.DataSource = cmd.ExecuteReader();
             rptSiparis.DataBind();
