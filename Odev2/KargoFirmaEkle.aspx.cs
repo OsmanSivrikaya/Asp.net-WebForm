@@ -17,6 +17,7 @@ namespace Odev2
             {
                 KargoFirmaGetir();
             }
+            
         }
         public void KargoFirmaGetir()
         {
@@ -39,7 +40,7 @@ namespace Odev2
             Connection1 con = new Connection1();
             DataTable tablo = new DataTable();
             con.con.Open();
-            con.komut = new SqlCommand("spKullaniciEkle", con.con);
+            con.komut = new SqlCommand("spKargoFirmaEkle", con.con);
             con.komut.CommandType = CommandType.StoredProcedure;
             con.komut.Parameters.AddWithValue("@KargoFirmaAd", txtKargoAd.Text);
             con.komut.Parameters.AddWithValue("@Adres", txtKargoAdres.Text);
@@ -79,8 +80,8 @@ namespace Odev2
 
             SqlConnection con = new SqlConnection(cs);
             int id = Convert.ToInt32(KargoFirmaGrid.DataKeys[e.RowIndex].Value);
-            string KargoFirmaAd = (KargoFirmaGrid.Rows[e.RowIndex].FindControl("txtKargoAd") as TextBox).Text;
-            string KargoAdres = (KargoFirmaGrid.Rows[e.RowIndex].FindControl("txtKargoAdres") as TextBox).Text;
+            string KargoFirmaAd = (KargoFirmaGrid.Rows[e.RowIndex].FindControl("txtKAd") as TextBox).Text;
+            string KargoAdres = (KargoFirmaGrid.Rows[e.RowIndex].FindControl("txtKAdres") as TextBox).Text;
             SqlCommand cmd = new SqlCommand("spKargoFirmaGuncelle", con);
             cmd.CommandType = System.Data.CommandType.StoredProcedure;
 

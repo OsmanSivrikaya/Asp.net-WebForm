@@ -69,7 +69,7 @@
                                          <asp:Label runat="server" Text='<%#Eval("KAd") %>'></asp:Label>
                                      </ItemTemplate>
                                      <EditItemTemplate>
-                                         <asp:TextBox ID="txtAd" Visible="false" runat="server" Text='<%#Bind("KAd") %>'></asp:TextBox>
+                                         <asp:TextBox ID="txtAd" runat="server" Text='<%#Bind("KAd") %>'></asp:TextBox>
                                      </EditItemTemplate>
                                  </asp:TemplateField>
 

@@ -68,8 +68,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="KargoFirmaEkle.aspx" />
+    <Content Include="KargoFirmaGoster.aspx" />
     <Content Include="KullaniciEkle.aspx" />
     <Content Include="KullaniciGetir.aspx" />
+    <Content Include="Siparis.aspx" />
+    <Content Include="SiparisGoster.aspx" />
+    <Content Include="TumTablolar.aspx" />
+    <Content Include="UrunEkle.aspx" />
+    <Content Include="UrunGoster.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -79,6 +85,13 @@
     </Compile>
     <Compile Include="KargoFirmaEkle.aspx.designer.cs">
       <DependentUpon>KargoFirmaEkle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KargoFirmaGoster.aspx.cs">
+      <DependentUpon>KargoFirmaGoster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KargoFirmaGoster.aspx.designer.cs">
+      <DependentUpon>KargoFirmaGoster.aspx</DependentUpon>
     </Compile>
     <Compile Include="KullaniciEkle.aspx.cs">
       <DependentUpon>KullaniciEkle.aspx</DependentUpon>
@@ -95,6 +108,41 @@
       <DependentUpon>KullaniciGetir.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Siparis.aspx.cs">
+      <DependentUpon>Siparis.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Siparis.aspx.designer.cs">
+      <DependentUpon>Siparis.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SiparisGoster.aspx.cs">
+      <DependentUpon>SiparisGoster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SiparisGoster.aspx.designer.cs">
+      <DependentUpon>SiparisGoster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TumTablolar.aspx.cs">
+      <DependentUpon>TumTablolar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TumTablolar.aspx.designer.cs">
+      <DependentUpon>TumTablolar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UrunEkle.aspx.cs">
+      <DependentUpon>UrunEkle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UrunEkle.aspx.designer.cs">
+      <DependentUpon>UrunEkle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UrunGoster.aspx.cs">
+      <DependentUpon>UrunGoster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UrunGoster.aspx.designer.cs">
+      <DependentUpon>UrunGoster.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

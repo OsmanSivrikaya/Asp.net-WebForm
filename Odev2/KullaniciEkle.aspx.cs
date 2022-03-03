@@ -15,7 +15,6 @@ namespace Odev2
             if(!IsPostBack)
             {
                 KullaniciGetir();
-
             }
         }
         public void KullaniciGetir()
@@ -35,6 +34,7 @@ namespace Odev2
             txtKSoyad.Text = "";
             txtKYas.Text = "";
             txtKAdres.Text = "";
+            KullaniciGetir();
         }
         public void OrdersEkle()
         {
